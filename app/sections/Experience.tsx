@@ -9,6 +9,7 @@ import * as tech4germany from '~/content/experience/tech4germany.en.md'
 interface experience {
   title: string
   duration: string
+  what: string
   org: string
   orgUrl: string
   tags: Array<string>
@@ -31,7 +32,13 @@ const cardProps: Array<CardProps> = []
 
 experiences.map(experience => cardProps.push({
   title: experience.title,
-  topRight: experience.duration,
+  topRight: (
+    <>
+      {experience.duration},
+      <br />
+      {experience.what}
+    </>
+  ),
   subtitlePrefix: "at",
   subtitle: experience.org,
   subtitleUrl: experience.orgUrl,

@@ -4,7 +4,7 @@ import AngleDown from "public/icons/angle-down-solid.svg"
 
 export interface CardProps {
   title: string
-  topRight: string
+  topRight: any 
   subtitlePrefix?: string
   subtitle: string
   subtitleUrl?: string
@@ -20,7 +20,7 @@ export default function Card({ title, topRight, subtitlePrefix, subtitle, subtit
 
   return (
     <>
-      <div className="group hover:bg-indigo-50 border rounded-3xl container max-w-3xl border-3 p-5 shadow-lg flex flex-col gap-5">
+      <div className="group hover:bg-indigo-50 border rounded-3xl container border-3 p-5 shadow-lg flex flex-col gap-5">
         <div className="flex gap-5">
           {img && <img className="self-center hidden sm:block aspect-square w-24 translate-y-5" src={img} />}
           <div className="flex flex-col gap-5 break-inside-avoid grow">

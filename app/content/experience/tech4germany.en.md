@@ -1,6 +1,6 @@
 ---
 title: Modernize & Digitize Administrative Processes
-what: Fellowship
+what: fulltime
 duration: Aug. - Nov. 2021
 org: Tech4Germany
 orgUrl: https://digitalservice.bund.de/tech4germany/ 

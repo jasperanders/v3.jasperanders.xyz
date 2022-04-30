@@ -1,6 +1,6 @@
 ---
-title: Agile Softwareentwicklung von Webapplikationen
-what: Praktikum & Werkstudent
+title: Agile Fullstack Web Development
+what: internship and working student
 duration: Okt. 2018 - Aug. 2021
 org: Ambient
 orgUrl: https://ambient.digital/

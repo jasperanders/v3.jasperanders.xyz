@@ -36,7 +36,7 @@ education.map(education => cardProps.push({
 
 export default function Education() {
   return (
-    <div className="mt-10">
+    <div className="mt-10 max-w-3xl mx-auto">
       <Section title="Education" cards={cardProps} />
     </div>
   )
