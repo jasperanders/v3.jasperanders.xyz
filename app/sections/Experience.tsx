@@ -1,3 +1,4 @@
+
 import { CardProps } from "~/components/Card"
 import Section from "~/components/Section"
 
@@ -5,7 +6,16 @@ import * as Ambient from '~/content/experience/ambient.en.md'
 import * as dbAnalytics from '~/content/experience/dbAnalytics.en.md'
 import * as tech4germany from '~/content/experience/tech4germany.en.md'
 
-const experiences: Array<CardProps> = [
+interface experience {
+  title: string
+  duration: string
+  org: string
+  orgUrl: string
+  tags: Array<string>
+  details: string
+}
+
+const experiences: Array<experience> = [
   {
     ...tech4germany.attributes,
     details: tech4germany.default
@@ -17,18 +27,18 @@ const experiences: Array<CardProps> = [
     details: dbAnalytics.default
   }]
 
-const cardProps: Array<CardProps | undefined>
+const cardProps: Array<CardProps> = []
 
 experiences.map(experience => cardProps.push({
   title: experience.title,
-  topRight: experience,
-  subtitlePrefix: experience,
-  subtitle: experience,
-  subtitleUrl: experience,
-  tags: experience,
-  details: experience,
+  topRight: experience.duration,
+  subtitlePrefix: "at",
+  subtitle: experience.org,
+  subtitleUrl: experience.orgUrl,
+  tags: experience.tags,
+  details: experience.details,
 }))
 
 export default function Experience() {
-  return (<Section title="Experience" cards={experiences} />)
+  return (<Section title="Experience" cards={cardProps} />)
 }

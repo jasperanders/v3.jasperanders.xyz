@@ -1,3 +1,72 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+
+    @font-face {
+      font-family: "Fira Code";
+      src: url("/fonts/FiraCode-VariableFont_wght.ttf");
+    }
+
+    @font-face {
+      font-family: "Secular One";
+      src: url("/fonts/SecularOne.ttf");
+    } 
+    @font-face {
+      font-family: "Arvo";
+      src: url("/fonts/Arvo-Regular.ttf");
+      font-weight: normal;
+    }
+    @font-face {
+      font-family: "Arvo";
+      src: url("/fonts/Arvo-Bold.ttf");
+      font-weight: bold ;
+    }
+    @font-face {
+      font-family: "Arvo";
+      src: url("/fonts/Arvo-BoldItalic.ttf");
+      font-weight: bold ;
+      font-style: italic ;
+    }
+    @font-face {
+      font-family: "Arvo";
+      src: url("/fonts/Arvo-Italic.ttf");
+      font-weight: normal ;
+      font-style: italic ;
+    }
+
+    ol {
+      list-style-type: decimal;
+      margin-left: 2rem;
+    }
+
+    code {
+      font-family: "Fira Code";
+      font-weight: normal;
+      color: #f8f8f2;
+      background-color: #4f46e5;
+      padding: 0 0.4rem;
+      border-radius: 0.3rem;
+    }
+
+    body {
+      font-family: "Fira Code", sans-serif;
+    }
+
+    a {
+      font-style: italic;
+      text-decoration: underline;
+      text-underline-offset: 0;
+      text-decoration-thickness: 3px;
+      text-decoration-color: #fcd34d;
+    }
+
+    a:hover {
+      text-decoration-color: #fde68a;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: "Arvo";
+    }
+}

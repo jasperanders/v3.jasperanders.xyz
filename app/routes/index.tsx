@@ -1,20 +1,27 @@
+import { Footer } from "~/components/Footer";
 import Header from "~/components/Header";
 import Education from "~/sections/Education";
 import Experience from "~/sections/Experience";
+import { Projects } from "~/sections/Projects";
 import { Skills } from "~/sections/Skills";
 
 export default function Index() {
   return (
-    <div className="flex flex-col gap-20 items-center">
+    <div className="flex flex-col gap-20">
       <Header />
-      <div className="mx-auto container columns-1 lg:columns-2 gap-10 px-5">
-        <Experience />
-        <Education />
+      <div className="px-5 flex  flex-col gap-20">
+        <div className="mx-auto container columns-1 xl:columns-2 gap-10 pb-3">
+          <Experience />
+          <Education />
+        </div>
+        <div className="mx-auto" >
+          <Projects />
+        </div>
+        <div className="container flex mx-auto place-content-center">
+          <Skills />
+        </div>
       </div>
-      <div className="container flex place-content-center">
-        <Skills />
-      </div>
-      <div>Projects</div>
+      <Footer />
     </div>
   );
 }

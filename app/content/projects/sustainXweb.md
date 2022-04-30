@@ -2,8 +2,8 @@
 title: Webdesign for sustainXchange
 when: 2020
 at: sustainXchange
-atURL: 
-type:
+img: icons/sustanXlogoSquare-v1_7.svg
+type: Personal Project
 tags: ["Gatsby js", "React", "CMS"]
 ---
 
@@ -14,11 +14,3 @@ For us this hit the perfect middle ground between me having to make all the chan
 At some point we decided to also provide our website in english. This was definitely the hardest part, as I struggled with cached version and service workers. Luckily there already was a strong abstraction of logic and content. Just adding the translated content was a breeze. 
 
 Check out the Website [here](https://sustainxchange.org/en/), you can view the source code [here](https://github.com/jasperanders/sustainxchange-web).
-
----
-title: Coffee Date Matching Slack Bot 
-when: 2022
-type: Personal Project
-img: https://slack.dev/bolt-python/assets/bolt-py-logo.svg
-tags: ["Slack Api and Bolt", "Python"]
----

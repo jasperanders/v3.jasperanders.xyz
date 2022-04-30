@@ -13,16 +13,16 @@ interface Skill {
 }
 
 const skills: Array<Skill> = [
-  { name: "Type Script", imgUrl: TS, scale: '75' },
-  { name: "Python", imgUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1024px-Python-logo-notext.svg.png", scale: '75' },
+  { name: "Type Script", imgUrl: TS, scale: 'sm' },
+  { name: "Python", imgUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1024px-Python-logo-notext.svg.png", scale: 'sm' },
   { name: "Docker", imgUrl: Docker },
-  { name: "Kubernetes", imgUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Kubernetes_logo_without_workmark.svg/1024px-Kubernetes_logo_without_workmark.svg.png", scale: '75', fontSize: "xl" },
+  { name: "Kubernetes", imgUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Kubernetes_logo_without_workmark.svg/1024px-Kubernetes_logo_without_workmark.svg.png", scale: 'sm', fontSize: "xl" },
   { name: "Remix", imgUrl: Remix },
   { name: "React", imgUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1024px-React-icon.svg.png" },
   { name: "Django", imgUrl: "https://static.djangoproject.com/img/logos/django-logo-positive.svg" },
   { name: "Git", imgUrl: Git },
-  { name: "Notion", imgUrl: "https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png?20200221181224", scale: "75" },
-  { name: "Figma", imgUrl: Figma, scale: '50' },
+  { name: "Notion", imgUrl: "https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png?20200221181224", scale: "sm" },
+  { name: "Figma", imgUrl: Figma, scale: 'xs' },
   { name: "Latex", imgUrl: "https://upload.wikimedia.org/wikipedia/commons/9/92/LaTeX_logo.svg" },
   { name: "Slack SDK", imgUrl: Slack },
   { name: "GitLab CI", imgUrl: "https://about.gitlab.com/images/press/logo/png/gitlab-icon-rgb.png" },
@@ -37,7 +37,7 @@ export function Skills() {
         {skills.map((skill) => (
           <div key={skill.name} className="group aspect-square h-28 flex items-center justify-center relative">
             <div className={`text-${skill.fontSize ? skill.fontSize : "2xl"} text-center text-indigo-600 font-bold invisible group-hover:visible z-10`}>{skill.name}</div>
-            <img className={`scale-${skill.scale ? skill.scale : "100"} group-hover:blur-md group-hover:brightness-125 group-hover:saturate-50 absolute left-0`} alt={skill.name} src={skill.imgUrl} />
+            <img className={`${skill.scale === "sm" && `scale-75`} ${skill.scale === "xs" && `scale-50`} group-hover:blur-md group-hover:brightness-125 group-hover:saturate-50 absolute left-0`} alt={skill.name} src={skill.imgUrl} />
           </div>
         ))}
       </div>
