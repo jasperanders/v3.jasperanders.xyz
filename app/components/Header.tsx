@@ -5,7 +5,7 @@ import AngleDown from "public/icons/angle-down-solid.svg"
 export default function Header() {
   return (
     <div className="h-screen flex flex-col justify-around bg-gradient-to-tl	from-white to-emerald-100 self-stretch">
-        <div className="invisible" />
+      <div className="invisible" />
       <div className="grid justify-items-center sm:grid-cols-7 items-center place-content-center gap-5">
         <div className=" col-span-7 sm:col-span-3 sm:justify-self-end">
           <p className="text-3xl pl-2 text-center sm:text-right">Hi, I'm</p>
@@ -26,7 +26,7 @@ export default function Header() {
           {/* <p className="text-center sm:text-left">Currently looking @Remix</p> */}
         </div>
       </div>
-      <blockquote className="mx-auto max-w-md text-lg p-5 italic">We must make every effort to ensure that digitization is an
+      <blockquote className="mx-auto max-w-md sm:text-lg p-5 italic">We must make every effort to ensure that digitization is an
         opportunity for everyone. That is why I want to contribute to the development of digital infrastructure for society.</blockquote>
       <img className="animate-bounce mx-auto h-8 items-end" src={AngleDown}></img>
     </div >
