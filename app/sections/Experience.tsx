@@ -32,14 +32,8 @@ const cardProps: Array<CardProps> = []
 
 experiences.map(experience => cardProps.push({
   title: experience.title,
-  topRight: (
-    <>
-      {experience.duration},
-      <br />
-      {experience.what}
-    </>
-  ),
-  subtitlePrefix: "at",
+  topRight: experience.duration,
+  subtitlePrefix: `${experience.what} at`,
   subtitle: experience.org,
   subtitleUrl: experience.orgUrl,
   tags: experience.tags,

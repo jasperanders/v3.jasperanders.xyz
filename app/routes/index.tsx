@@ -10,15 +10,15 @@ export default function Index() {
     <div className="flex flex-col gap-20">
       <Header />
       <div className="px-5 flex  flex-col gap-20">
-        <div className="mx-auto container columns-1 xl:columns-2 gap-10 pb-3">
-          <Experience />
-          <Education />
-        </div>
-        <div className="mx-auto" >
+        <div className="mx-auto container pb-3" >
           <Projects />
         </div>
         <div className="container flex mx-auto place-content-center">
           <Skills />
+        </div>
+        <div className="mx-auto container columns-1 xl:columns-2 gap-10">
+          <Experience />
+          <Education />
         </div>
       </div>
       <Footer />
