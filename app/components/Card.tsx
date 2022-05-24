@@ -4,7 +4,7 @@ import AngleDown from "public/icons/angle-down-solid.svg"
 
 export interface CardProps {
   title: string
-  topRight: any 
+  topRight: any
   subtitlePrefix?: string
   subtitle: string
   subtitleUrl?: string
@@ -19,10 +19,9 @@ export default function Card({ title, topRight, subtitlePrefix, subtitle, subtit
 
 
   return (
-    <div className="pb-5">
-      <div className="group hover:bg-gradient-to-tr	break-inside-avoid hover:from-white hover:to-indigo-50 border rounded-3xl container border-3 p-5 shadow-lg flex flex-col gap-5">
+    <button aria-label="show more" className="max-w-3xl group border rounded-3xl hover:shadow-xl container bg-white p-5 shadow-lg flex flex-col gap-5" onClick={() => setShowDetails(!showDetails)}>
         <div className="flex gap-5">
-          {img && <img className="self-center hidden sm:block aspect-square w-24 translate-y-5" src={img} />}
+          {img && <img alt={title} width={"96px"} height={"96px"} className="self-center hidden sm:block aspect-square w-24 h-24 translate-y-5" src={img} />}
           <div className="flex flex-col gap-5 break-inside-avoid grow">
             <p className="text-slate-500">{topRight}</p>
             <h3 className="text-xl font-bold">{title}</h3>
@@ -40,11 +39,8 @@ export default function Card({ title, topRight, subtitlePrefix, subtitle, subtit
             {details()}
           </>
         }
-        <button className="w-full" onClick={() => setShowDetails(!showDetails)}>
-          <img className={`mx-auto h-6 ${showDetails ? "transition rotate-180 slow ease-in-out" : "transition rotate-0 ease-in-out"}`} src={AngleDown}></img>
-        </button>
-      </div>
-    </div>
+        <img alt="ArrowDown" width={"24px"} height={"24px"} className={`mx-auto h-6 w-6 ${showDetails ? "transition rotate-180 slow ease-in-out" : "transition rotate-0 ease-in-out"}`} src={AngleDown}></img>
+    </button>
   )
 }
 

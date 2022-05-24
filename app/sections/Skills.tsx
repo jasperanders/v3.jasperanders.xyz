@@ -31,13 +31,13 @@ const skills: Array<Skill> = [
 export function Skills() {
   // { skills }: { skills?: Array<Skill> }
   return (
-    <div className='flex flex-col gap-10 justify-center'>
+    <div className='flex flex-col gap-10 justify-center bg-slate-200 shadow-inner p-5 rounded-3xl'>
       <h1 className="text-2xl font-bold">Some tools I have used:</h1>
       <div className="grid grid-cols-2 sm:grid-cols-5 gap-10">
         {skills.map((skill) => (
-          <div key={skill.name} className="group aspect-square h-28 flex items-center justify-center relative">
+          <div key={skill.name} className="group w-28 h-28 flex items-center justify-center relative">
             <div className={`text-${skill.fontSize ? skill.fontSize : "2xl"} text-center text-indigo-600 font-bold invisible group-hover:visible z-10`}>{skill.name}</div>
-            <img className={`${skill.scale === "sm" && `scale-75`} ${skill.scale === "xs" && `scale-50`} group-hover:blur-md group-hover:brightness-125 group-hover:saturate-50 absolute left-0`} alt={skill.name} src={skill.imgUrl} />
+            <img alt={skill.name} width={"112px"} height={"112px"} className={`${skill.scale === "sm" && `scale-75`} ${skill.scale === "xs" && `scale-50`} group-hover:blur-md group-hover:brightness-125 group-hover:saturate-50 absolute left-0`} alt={skill.name} src={skill.imgUrl} />
           </div>
         ))}
       </div>

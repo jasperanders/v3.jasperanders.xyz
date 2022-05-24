@@ -38,7 +38,6 @@ projects.map(project => cardProps.push(
 
 export function Projects() {
   return (
-
-    <Section title='Projects' cards={cardProps} twoCols={true} />
+    <Section title='Projects' cards={cardProps} twoCols={false} />
   )
 }
