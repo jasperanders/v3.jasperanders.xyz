@@ -504,15 +504,15 @@ body {
 a {
   font-style: italic;
   text-decoration: underline;
-  text-underline-offset: 0;
-  text-decoration-thickness: 3px;
-  -webkit-text-decoration-color: #fcd34d;
-          text-decoration-color: #fcd34d;
+  /* text-underline-offset: 3; */
+  text-decoration-thickness: 5px;
+  -webkit-text-decoration-color: #fb7185;
+          text-decoration-color: #fb7185;
 }
 
 a:hover {
-  -webkit-text-decoration-color: #fde68a;
-          text-decoration-color: #fde68a;
+  -webkit-text-decoration-color: #fda4af;
+          text-decoration-color: #fda4af;
 }
 
 h1, h2, h3, h4 {
@@ -626,10 +626,6 @@ h1, h2, h3, h4 {
   right: 1.25rem;
 }
 
-.left-5 {
-  left: 1.25rem;
-}
-
 .left-0 {
   left: 0px;
 }
@@ -638,25 +634,28 @@ h1, h2, h3, h4 {
   z-index: 10;
 }
 
-.-z-10 {
-  z-index: -10;
-}
-
-.z-0 {
-  z-index: 0;
-}
-
 .col-span-7 {
   grid-column: span 7 / span 7;
-}
-
-.m-1 {
-  margin: 0.25rem;
 }
 
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.mx-1 {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.-my-32 {
+  margin-top: -8rem;
+  margin-bottom: -8rem;
 }
 
 .mb-8 {
@@ -703,8 +702,16 @@ h1, h2, h3, h4 {
   height: 80%;
 }
 
+.h-\[80vh\] {
+  height: 80vh;
+}
+
 .h-28 {
   height: 7rem;
+}
+
+.h-\[70vh\] {
+  height: 70vh;
 }
 
 .w-24 {
@@ -723,28 +730,24 @@ h1, h2, h3, h4 {
   width: 0px;
 }
 
-.w-28 {
-  width: 7rem;
+.w-full {
+  width: 100%;
 }
 
-.w-64 {
-  width: 16rem;
+.w-28 {
+  width: 7rem;
 }
 
 .max-w-3xl {
   max-width: 48rem;
 }
 
-.max-w-md {
-  max-width: 28rem;
-}
-
-.max-w-lg {
-  max-width: 32rem;
-}
-
 .max-w-xl {
   max-width: 36rem;
+}
+
+.max-w-md {
+  max-width: 28rem;
 }
 
 .grow {
@@ -758,6 +761,21 @@ h1, h2, h3, h4 {
 
 .-translate-x-10 {
   --tw-translate-x: -2.5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-10 {
+  --tw-translate-x: 2.5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-10 {
+  --tw-translate-y: 2.5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-y-10 {
+  --tw-translate-y: -2.5rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -835,10 +853,6 @@ h1, h2, h3, h4 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.flex-row {
-  flex-direction: row;
-}
-
 .flex-col {
   flex-direction: column;
 }
@@ -853,10 +867,6 @@ h1, h2, h3, h4 {
 
 .place-items-center {
   place-items: center;
-}
-
-.content-center {
-  align-content: center;
 }
 
 .items-start {
@@ -909,14 +919,6 @@ h1, h2, h3, h4 {
   margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
 }
 
-.place-self-center {
-  place-self: center;
-}
-
-.place-self-stretch {
-  place-self: stretch;
-}
-
 .self-center {
   align-self: center;
 }
@@ -941,7 +943,8 @@ h1, h2, h3, h4 {
   border-radius: 0.5rem;
 }
 
-.rounded-br-\[100px\] {
+.rounded-r-\[100px\] {
+  border-top-right-radius: 100px;
   border-bottom-right-radius: 100px;
 }
 
@@ -1018,6 +1021,10 @@ h1, h2, h3, h4 {
   padding-left: 0.5rem;
 }
 
+.pr-8 {
+  padding-right: 2rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1050,8 +1057,8 @@ h1, h2, h3, h4 {
   line-height: 2.25rem;
 }
 
-.text-7xl {
-  font-size: 4.5rem;
+.text-9xl {
+  font-size: 8rem;
   line-height: 1;
 }
 
@@ -1112,11 +1119,6 @@ h1, h2, h3, h4 {
           text-decoration-line: underline;
 }
 
-.decoration-amber-300 {
-  -webkit-text-decoration-color: #fcd34d;
-          text-decoration-color: #fcd34d;
-}
-
 .underline-offset-2 {
   text-underline-offset: 2px;
 }
@@ -1154,11 +1156,6 @@ h1, h2, h3, h4 {
 
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.hover\:decoration-amber-200:hover {
-  -webkit-text-decoration-color: #fde68a;
-          text-decoration-color: #fde68a;
 }
 
 .hover\:shadow-xl:hover {
@@ -1253,6 +1250,11 @@ h1, h2, h3, h4 {
 @media (min-width: 1280px) {
   .xl\:text-5xl {
     font-size: 3rem;
+    line-height: 1;
+  }
+
+  .xl\:text-9xl {
+    font-size: 8rem;
     line-height: 1;
   }
 

@@ -19,14 +19,14 @@ export default function Card({ title, topRight, subtitlePrefix, subtitle, subtit
 
 
   return (
-    <button aria-label="show more" className="max-w-3xl group border rounded-3xl hover:shadow-xl container bg-white p-5 shadow-lg flex flex-col gap-5" onClick={() => setShowDetails(!showDetails)}>
+    <button aria-label="show more" className="text-left max-w-3xl group border rounded-3xl hover:shadow-xl container bg-white p-5 shadow-lg flex flex-col gap-5" onClick={() => setShowDetails(!showDetails)}>
         <div className="flex gap-5">
           {img && <img alt={title} width={"96px"} height={"96px"} className="self-center hidden sm:block aspect-square w-24 h-24 translate-y-5" src={img} />}
-          <div className="flex flex-col gap-5 break-inside-avoid grow">
+          <div className="flex flex-col gap-5 items-start break-inside-avoid grow">
             <p className="text-slate-500">{topRight}</p>
             <h3 className="text-xl font-bold">{title}</h3>
             <span className="text-lg">{subtitlePrefix && `${subtitlePrefix} `}
-              {subtitleUrl ? <a className="text-lg underline-offset-2 decoration-3 underline decoration-amber-300 hover:decoration-amber-200" target="_blank" href={subtitleUrl}>{subtitle}</a> : <span className="text-lg">{subtitle}</span>}
+              {subtitleUrl ? <a className="text-lg decoration-3 underline" target="_blank" href={subtitleUrl}>{subtitle}</a> : <span className="text-lg">{subtitle}</span>}
             </span>
             <div className="flex flex-wrap gap-2">
               {tags.map(tag => (<span key={tag} className="bg-indigo-200 whitespace-nowrap p-1 px-2 rounded-lg break-after-auto">{tag}</span>))}

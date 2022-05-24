@@ -1,7 +1,7 @@
 import GitHub from "public/icons/github-brands.svg"
 import Linkedin from "public/icons/linkedin-brands.svg"
 import AngleDown from "public/icons/angle-down-solid.svg"
-import Me from "public/img/MeSun.jpg"
+import Me from "public/img/MeBW.jpg"
 import { useEffect, useState } from "react"
 
 const words = [
@@ -12,64 +12,69 @@ const words = [
 
 export default function Header() {
 
-  const [index, setIndex] = useState(0);
-  const [subIndex, setSubIndex] = useState(0);
-  const [blink, setBlink] = useState(true);
-  const [reverse, setReverse] = useState(false);
+  // const [index, setIndex] = useState(0);
+  // const [subIndex, setSubIndex] = useState(0);
+  // const [blink, setBlink] = useState(true);
+  // const [reverse, setReverse] = useState(false);
 
-  // typeWriter
-  useEffect(() => {
+  // // typeWriter
+  // useEffect(() => {
 
-    if (
-      subIndex === words[index].length + 1
-      && !reverse
-    ) {
-      setReverse(true);
-      return;
-    }
+  //   if (
+  //     subIndex === words[index].length + 1
+  //     && !reverse
+  //   ) {
+  //     setReverse(true);
+  //     return;
+  //   }
 
-    if (subIndex === 0 && reverse) {
-      setReverse(false);
-      console.log(index)
-      if (index >= words.length - 1) {
-        setIndex(0)
-      } else {
-        setIndex((prev) => prev + 1);
-      }
-      return;
-    }
+  //   if (subIndex === 0 && reverse) {
+  //     setReverse(false);
+  //     console.log(index)
+  //     if (index >= words.length - 1) {
+  //       setIndex(0)
+  //     } else {
+  //       setIndex((prev) => prev + 1);
+  //     }
+  //     return;
+  //   }
 
-    const timeout = setTimeout(() => {
-      setSubIndex((prev) => prev + (reverse ? -1 : 1));
-    }, Math.max(reverse ? 20 : subIndex === words[index].length ? 2500 : 100));
+  //   const timeout = setTimeout(() => {
+  //     setSubIndex((prev) => prev + (reverse ? -1 : 1));
+  //   }, Math.max(reverse ? 20 : subIndex === words[index].length ? 2500 : 100));
 
-    return () => clearTimeout(timeout);
-  }, [subIndex, index, reverse]);
+  //   return () => clearTimeout(timeout);
+  // }, [subIndex, index, reverse]);
 
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setBlink(!blink)
-    }, 350)
-    return () => clearTimeout(timeout);
-  })
+  // useEffect(() => {
+  //   const timeout = setTimeout(() => {
+  //     setBlink(!blink)
+  //   }, 350)
+  //   return () => clearTimeout(timeout);
+  // })
 
   return (
-    <div className="static h-screen bg-gradient-to-b from-white to-sky-200 self-stretch text-slate-700 gap-5">
+    <div className="static h-screen bg-gradient-to-b from-white to-sky-200 text-slate-700 gap-5">
       {/* The invisible div keeps the name more centered */}
       <Sticky />
-      <Social />
-      <div className="grid grid-cols-2 items-stretch justify-around">
+      <div className="h-screen flex gap-10 items-center">
         <Hero />
-        <div className="place-self-stretch flex flex-col items-center justify-around">
-          <div className="container max-w-xl">
-            <h1 className="leading-tight font-bold italic text-rose-400 text-left text-7xl sm:leading-tight sm:text-9xl xl:text-5xl xl:leading-tight">
-              I am {`${words[index].substring(0, subIndex)}${blink ? "|" : " "}`}
+        <div className="flex flex-col translate-y-10 mx-auto justify-between h-[70vh]">
+          <div />
+          <div className="">
+            <h1 className="leading-tight font-bold text-rose-400 text-left text-9xl sm:leading-tight sm:text-9xl xl:text-9xl xl:leading-tight">
+              {/* I am {`${words[index].substring(0, subIndex)}${blink ? "|" : " "}`} */}
+             Jasper <br/> Anders 
             </h1>
           </div>
+          <blockquote className="mx-auto max-w-md sm:text-lg p-5 font-bold text-left italic">
+            Advocate of trying.<br />
+            Expert search engine user.<br />
+            Constantly thinking about bad (and good) business ideas.
+          </blockquote>
           <img alt="scroll down" width={"32px"} height={"32px"} className="animate-bounce self-center h-8 w-8 items-end" src={AngleDown}></img>
         </div>
-      </div>
-      {/* 
+        {/* 
       <iv className="flex flex-col">
         <div className=" col-span-7 sm:col-span-3 sm:justify-self-end">
           <p className="text-3xl pl-2 text-center">Jasper Anders is</p>
@@ -82,29 +87,36 @@ export default function Header() {
           {/* <p className="text-center sm:text-left">Currently looking @Remix</p> 
         </div>
       </div>
-      <blockquote className="mx-auto max-w-md sm:text-lg p-5 font-bold text-left italic">
-        Advocate of trying.<br />
-        Expert search engine user.<br />
-        Constantly thinking about bad (and good) business ideas.
-      </blockquote> */}
+ */}
+      </div>
     </div >
   )
 }
 
 const Social = () => (<div className="absolute top-5 right-5 flex">
-  {[{ src: GitHub, url: "https://github.com/jasperanders" }, { src: Linkedin, url: "https://www.linkedin.com/in/jasper-anders/" }].map((social) => (
-    <div className="m-1" key={social.src}>
-      <a href={social.url}>
-        <img alt={social.url} width={"32px"} height={"32px"} className="w-6 h-6 sm:h-8 sm:w-8" src={social.src}></img>
-      </a>
-    </div>
-  ))}
+
 </div>)
 
 const Hero = () => (
-  <img className="h-screen rounded-br-[100px] shadow-slate-700 shadow-sm" src={Me} />
+  <img className="h-[80vh] rounded-r-[100px] shadow-slate-700 shadow-sm" src={Me} />
 )
 
-const Sticky = () => (<div className="z-10 fixed top-5 left-5">
-  <h2 className="text-[#232c42] font-bold italic text-5xl">Jasper Anders</h2>
-</div>)
+const Sticky = () => (
+  <div className="z-10 w-full fixed p-5 pr-8 bg-white flex justify-between">
+    <h2 className="text-[#232c42] font-bold italic text-5xl">Jasper Anders</h2>
+    <div className="flex items-center">
+      <div className="mx-4" key={"blog"}>
+        <a className="text-2xl font-bold" target="_blank" href={"https://marginalien.jasperanders.xyz"}>
+          Blog
+        </a>
+      </div>
+      {[{ src: GitHub, url: "https://github.com/jasperanders" }, { src: Linkedin, url: "https://www.linkedin.com/in/jasper-anders/" }].map((social) => (
+        <div className="mx-1" key={social.src}>
+          <a href={social.url} target="_blank">
+            <img alt={social.url} width={"32px"} height={"32px"} className="w-6 h-6 sm:h-8 sm:w-8" src={social.src} />
+          </a>
+        </div>
+      ))}
+
+    </div>
+  </div>)

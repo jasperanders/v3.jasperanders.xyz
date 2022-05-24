@@ -63,13 +63,13 @@
     a {
       font-style: italic;
       text-decoration: underline;
-      text-underline-offset: 0;
-      text-decoration-thickness: 3px;
-      text-decoration-color: #fcd34d;
+      /* text-underline-offset: 3; */
+      text-decoration-thickness: 5px;
+      text-decoration-color: #fb7185;
     }
 
     a:hover {
-      text-decoration-color: #fde68a;
+      text-decoration-color: #fda4af;
     }
 
     h1, h2, h3, h4 {
