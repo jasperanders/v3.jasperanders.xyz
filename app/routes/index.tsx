@@ -9,13 +9,13 @@ export default function Index() {
   return (
     <div className="flex flex-col gap-20 bg-sky-200">
       <Header />
-      <div className="px-5 flex  flex-col gap-20">
+      <div className="px-5 grid items-stretch mx-auto flex-col gap-20">
         <Projects />
         <Experience />
         <Education />
-        <div className="container flex mx-auto place-content-center">
+        {/* <div className="container flex mx-auto place-content-center">
           <Skills />
-        </div>
+        </div> */}
       </div>
       <Footer />
     </div>

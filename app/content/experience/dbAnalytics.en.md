@@ -1,5 +1,5 @@
 ---
-title: Building an Interactive Dashboard for Punctuality Data
+title: Helping a Railway Provider Understand their Punctuality Problem 
 what: internship
 duration: Aug. - Okt. 2017
 org: Deutsche Bahn Analytics

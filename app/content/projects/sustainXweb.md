@@ -1,5 +1,5 @@
 ---
-title: Webdesign for sustainXchange
+title: Helping a Non-Profit become Visible
 when: 2020
 at: sustainXchange
 img: icons/sustanXlogoSquare-v1_7.svg

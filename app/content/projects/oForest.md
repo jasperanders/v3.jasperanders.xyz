@@ -1,5 +1,5 @@
 ---
-title: Continuous Deployment - Building an Integrated DevOps Environment
+title: Improving how Digital Experiments are Run
 when: 2021
 type: University Project
 img: icons/arrows-spin-solid.svg

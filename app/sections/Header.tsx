@@ -2,6 +2,7 @@ import GitHub from "public/icons/github-brands.svg"
 import Linkedin from "public/icons/linkedin-brands.svg"
 import AngleDown from "public/icons/angle-down-solid.svg"
 import Me from "public/img/MeBW.jpg"
+import Signature from "public/img/sign.svg"
 import { useEffect, useState } from "react"
 
 const words = [
@@ -54,23 +55,20 @@ export default function Header() {
   // })
 
   return (
-    <div className="static h-screen bg-gradient-to-b from-white to-sky-200 text-slate-700 gap-5">
+    <div className="static bg-gradient-to-b from-white to-sky-200 text-slate-700 gap-5">
       {/* The invisible div keeps the name more centered */}
       <Sticky />
-      <div className="h-screen flex gap-10 items-center">
+      <div className="min-h-screen flex flex-col lg:flex-row gap-10 items-center">
         <Hero />
-        <div className="flex flex-col translate-y-10 mx-auto justify-between h-[70vh]">
-          <div />
-          <div className="">
-            <h1 className="leading-tight font-bold text-rose-400 text-left text-9xl sm:leading-tight sm:text-9xl xl:text-9xl xl:leading-tight">
-              {/* I am {`${words[index].substring(0, subIndex)}${blink ? "|" : " "}`} */}
-             Jasper <br/> Anders 
-            </h1>
-          </div>
-          <blockquote className="mx-auto max-w-md sm:text-lg p-5 font-bold text-left italic">
-            Advocate of trying.<br />
-            Expert search engine user.<br />
-            Constantly thinking about bad (and good) business ideas.
+        <div className="flex flex-col lg:translate-y-10 mx-auto justify-between lg:h-[70vh]">
+
+          <blockquote className="mx-auto max-w-2xl text-xl sm:text-2xl p-5 font-bold text-left italic overflow-hidden md:translate-y-32">
+            I'm thinking critical about structural problems.
+            My approach to solving these problems is hands-on and output-focus.
+            Using my interdisciplinary skill set, I always have an eye for the bigger picture.
+            <div className="max-w-sm md:max-w-lg -translate-y-25 sm:translate-x-10">
+              <img src={Signature} />
+            </div>
           </blockquote>
           <img alt="scroll down" width={"32px"} height={"32px"} className="animate-bounce self-center h-8 w-8 items-end" src={AngleDown}></img>
         </div>
@@ -93,30 +91,28 @@ export default function Header() {
   )
 }
 
-const Social = () => (<div className="absolute top-5 right-5 flex">
-
-</div>)
-
 const Hero = () => (
-  <img className="h-[80vh] rounded-r-[100px] shadow-slate-700 shadow-sm" src={Me} />
+  <img className="max-h-[50vh] lg:max-h-[60vh] xl:max-h-[80vh] rounded-full lg:rounded-l-[100px] shadow-slate-700 shadow-md" src={Me} />
 )
 
 const Sticky = () => (
-  <div className="z-10 w-full fixed p-5 pr-8 bg-white flex justify-between">
-    <h2 className="text-[#232c42] font-bold italic text-5xl">Jasper Anders</h2>
-    <div className="flex items-center">
+  <div className="z-10 w-full sticky lg:fixed top-0 p-5 pr-8 bg-white flex justify-between">
+    <h2 className="text-[#232c42] font-bold italic text-3xl mr-5 sm:text-5xl">Jasper Anders</h2>
+    <div className="flex flex-col sm:flex-row items-center">
       <div className="mx-4" key={"blog"}>
         <a className="text-2xl font-bold" target="_blank" href={"https://marginalien.jasperanders.xyz"}>
           Blog
         </a>
       </div>
-      {[{ src: GitHub, url: "https://github.com/jasperanders" }, { src: Linkedin, url: "https://www.linkedin.com/in/jasper-anders/" }].map((social) => (
-        <div className="mx-1" key={social.src}>
-          <a href={social.url} target="_blank">
-            <img alt={social.url} width={"32px"} height={"32px"} className="w-6 h-6 sm:h-8 sm:w-8" src={social.src} />
-          </a>
-        </div>
-      ))}
+      <div className="flex mt-4 sm:m-0">
 
+        {[{ src: GitHub, url: "https://github.com/jasperanders" }, { src: Linkedin, url: "https://www.linkedin.com/in/jasper-anders/" }].map((social) => (
+          <div className="mx-1" key={social.src}>
+            <a href={social.url} target="_blank">
+              <img alt={social.url} width="32px" className="w-6 h-6 sm:h-8 sm:w-8" src={social.src} />
+            </a>
+          </div>
+        ))}
+      </div>
     </div>
   </div>)

@@ -1,5 +1,5 @@
 ---
-title: Agile Fullstack Web Development
+title: Developing Highly Interactive Software
 what: internship and working student
 duration: Okt. 2018 - Aug. 2021
 org: Ambient

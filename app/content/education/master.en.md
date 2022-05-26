@@ -1,5 +1,6 @@
 ---
-title: M. Sc. Information Systems
+title: Studying the Internet, Security and how to handle Data
+what:  (M. Sc. Information Systems)
 duration: Okt. 2020 - present
 org: Karlsruher Institut for Technologie
 orgUrl: https://www.wirtschaftsinformatik.kit.edu/

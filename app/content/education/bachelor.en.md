@@ -1,6 +1,6 @@
 ---
-title: B. Sc. Industrial Engineering
-what:
+title: Learning about Business Models, Services and Computer Science 
+what: (B. Sc. Industrial Engineering)
 duration: Okt. 2016 - 2020 
 org: Karlsruher Institut for Technologie
 orgUrl: https://www.kit.edu/
