@@ -1,5 +1,5 @@
 ---
-title: Studying the Internet, Security and how to handle Data
+title: Studied Cyber Security, Digital Infrastructure and How to Handle Data
 what:  M. Sc. Information Systems
 duration: Okt. 2020 - present
 org: KIT

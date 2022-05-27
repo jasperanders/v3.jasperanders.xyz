@@ -41,5 +41,5 @@ experiences.map(experience => cardProps.push({
 }))
 
 export default function Experience() {
-  return (<Section title="Experience" cards={cardProps} />)
+  return (<Section title="Work Experience" cards={cardProps} />)
 }

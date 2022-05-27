@@ -37,6 +37,6 @@ education.map(education => cardProps.push({
 
 export default function Education() {
   return (
-      <Section title="Education" cards={cardProps} />
+      <Section title="Higher Education" cards={cardProps} />
   )
 }

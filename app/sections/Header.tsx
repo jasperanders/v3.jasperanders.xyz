@@ -1,5 +1,6 @@
 import GitHub from "public/icons/github-brands.svg"
 import Linkedin from "public/icons/linkedin-brands.svg"
+import Twitter from "public/icons/twitter-brands.svg"
 import AngleDown from "public/icons/angle-down-solid.svg"
 import Me from "public/img/MeBW.jpg"
 import Signature from "public/img/sign.svg"
@@ -63,14 +64,13 @@ export default function Header() {
         <div className="flex flex-col lg:translate-y-10 mx-auto justify-between lg:h-[70vh]">
 
           <blockquote className="mx-auto max-w-2xl text-xl sm:text-2xl p-5 font-bold text-left italic overflow-hidden lg:translate-y-32">
-            I'm thinking critical about structural problems.
-            My approach to solving these problems is hands-on and output-focus.
+            I am a critical and constructive thinker about structural problems.
+            My approach to solving these problems is hands-on and output-focused.
             Using my interdisciplinary skill set, I always have an eye for the bigger picture.
             <div className="max-w-sm md:max-w-lg md:-translate-y-25 sm:translate-x-10">
-              <img src={Signature} />
+              <img alt="Signature" src={Signature} />
             </div>
           </blockquote>
-          <img alt="scroll down" width={"32px"} height={"32px"} className="animate-bounce self-center h-8 w-8 items-end" src={AngleDown}></img>
         </div>
         {/* 
       <iv className="flex flex-col">
@@ -92,7 +92,7 @@ export default function Header() {
 }
 
 const Hero = () => (
-  <img className="max-h-[50vh] lg:max-h-[60vh] xl:max-h-[80vh] rounded-full lg:rounded-l-[100px] shadow-slate-700 shadow-md" src={Me} />
+  <img alt="Jasper Anders" className="max-h-[50vh] lg:max-h-[60vh] xl:max-h-[80vh] rounded-full lg:rounded-l-[100px] shadow-slate-700 shadow-md" src={Me} />
 )
 
 const Sticky = () => (
@@ -106,7 +106,11 @@ const Sticky = () => (
       </div>
       <div className="flex mt-4 sm:m-0">
 
-        {[{ src: GitHub, url: "https://github.com/jasperanders" }, { src: Linkedin, url: "https://www.linkedin.com/in/jasper-anders/" }].map((social) => (
+        {[
+          { src: GitHub, url: "https://github.com/jasperanders" }, 
+          {src: Twitter, url: "https://twitter.com/_asperanders"},
+          { src: Linkedin, url: "https://www.linkedin.com/in/jasper-anders/"}, 
+        ].map((social) => (
           <div className="mx-1" key={social.src}>
             <a href={social.url} target="_blank">
               <img alt={social.url} width="32px" className="w-6 h-6 sm:h-8 sm:w-8" src={social.src} />

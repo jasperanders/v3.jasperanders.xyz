@@ -70,8 +70,7 @@
     a {
       font-style: italic;
       text-decoration: underline;
-      text-underline-offset: 3px;
-      text-decoration-thickness: 5px;
+      text-decoration-thickness: 4px;
       text-decoration-color: #38bdf8;
     }
     

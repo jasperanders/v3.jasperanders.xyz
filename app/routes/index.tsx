@@ -4,6 +4,7 @@ import Education from "~/sections/Education";
 import Experience from "~/sections/Experience";
 import { Projects } from "~/sections/Projects";
 import { Skills } from "~/sections/Skills";
+import Personal from "~/sections/Personal";
 
 export default function Index() {
   return (
@@ -13,8 +14,9 @@ export default function Index() {
         <Projects />
         <Experience />
         <Education />
-        {/* <div className="container flex mx-auto place-content-center">
-          <Skills />
+        <Skills />
+        {/* <div className="mx-auto">
+          <Personal />
         </div> */}
       </div>
       <Footer />

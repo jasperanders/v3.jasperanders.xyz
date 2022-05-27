@@ -11,4 +11,4 @@ I created the website for an association I was part of. For this, I used [Gatsby
 
 For us, this hit the perfect middle ground between me having to make all the changes and having to deal with the overhead of an actual CMS. Further, using GitHub as an interface, we didn't have to deal with user authentication.
 
-Check out the Website [here](https://sustainxchange.org/en/). You can also view the source code [here](https://github.com/jasperanders/sustainxchange-web).
+Check out the [sustainXchange Website here](https://sustainxchange.org/en/). You can also view the [source code here](https://github.com/jasperanders/sustainxchange-web).

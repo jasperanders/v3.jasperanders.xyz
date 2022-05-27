@@ -18,6 +18,10 @@ export function links() {
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
   title: "Jasper Anders",
+  description: "My Personal Website. Build by Me.",
+  keyword: "portfolio, javascript, developer, full-stack developer",
+  "og:image": "https://jasperanders.xyz/build/_assets/MeBW-ANV4H5UG.jpg",
+  "og:url": "https://jasperanders.xyz",
   viewport: "width=device-width,initial-scale=1",
 });
 

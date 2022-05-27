@@ -16,4 +16,4 @@ Using my results, deployment of new experiments follows a simple user story:
 4. In case the user changes something, these changes trigger a new pipeline. After it succeeds, the user can also deploy these changes.
 5. After the experiment is done, the users can easily delete their experiment from the cluster.
 
-The main technologies I used were Docker for creating container images, Kubernetes for orchestration, GitLab as the main user interaction point and for its CI capabilities. Further, each oTree experiment itself uses Python and Postgres as its underling database. For this project I learned a lot of new and exciting things, if you want to read more, you can find detailed documentation [here](https://devops.jasperanders.xyz).
+The main technologies I used were Docker for creating container images, Kubernetes for orchestration, GitLab as the main user interaction point and for its CI capabilities. Further, each oTree experiment itself uses Python and Postgres as its underling database. For this project I learned a lot of new and exciting things, if you want to read more, you can find [detailed documentation here](https://devops.jasperanders.xyz).

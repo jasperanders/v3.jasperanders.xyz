@@ -41,7 +41,7 @@ const Preface = (<p>Hello</p>)
 export function Projects() {
   return (
     <Section
-      title='Projects'
+      title='Technical Projects'
       cards={cardProps}
       // preface={Preface}
       twoCols={false} />

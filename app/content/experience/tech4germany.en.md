@@ -1,5 +1,5 @@
 ---
-title: Modernize & Digitize Administrative Processes 
+title: Modernize & Digitize Processes in the Public Sector 
 what: Fulltime Project Work during Fellowship
 duration: Aug. - Nov. 2021
 org: Tech4Germany
