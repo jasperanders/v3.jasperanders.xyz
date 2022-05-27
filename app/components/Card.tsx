@@ -33,7 +33,7 @@ export default function Card({ title, topRight, subtitlePrefix, subtitle, subtit
           </div>
         </div>
       </div>
-      <div className={`${!showDetails ? "hidden" : "visible"} max-w-fit shrink-0 grow-0 w-fit`} >
+      <div className={`${!showDetails ? "hidden" : "visible"} flex flex-col max-w-fit shrink-0 grow-0 w-fit gap-3`} >
         <hr className="mb-5" />
         {details()}
       </div>

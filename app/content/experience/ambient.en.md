@@ -1,6 +1,6 @@
 ---
 title: Developing Highly Interactive Software
-what: Part Time Full-Stack Development
+what: Part Time Full-Stack Developer
 duration: Okt. 2018 - Aug. 2021
 org: Ambient
 orgUrl: https://ambient.digital/
