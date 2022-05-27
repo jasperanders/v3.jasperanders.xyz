@@ -1,6 +1,6 @@
 ---
 title: Helping a Railway Provider Understand their Punctuality Problem 
-what: internship
+what: Internship
 duration: Aug. - Okt. 2017
 org: Deutsche Bahn Analytics
 tags: ["requirement specification", "SQL", "Qlik Sense"]

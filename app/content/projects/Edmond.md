@@ -2,7 +2,7 @@
 title: Making Meeting Your Teammates Easier 
 when: 2022
 type: Personal Project
-img: https://slack.dev/bolt-python/assets/bolt-py-logo.svg
+#img: https://slack.dev/bolt-python/assets/bolt-py-logo.svg
 tags: ["Slack Api and Bolt", "Python"]
 ---
 

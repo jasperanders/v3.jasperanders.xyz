@@ -62,11 +62,11 @@ export default function Header() {
         <Hero />
         <div className="flex flex-col lg:translate-y-10 mx-auto justify-between lg:h-[70vh]">
 
-          <blockquote className="mx-auto max-w-2xl text-xl sm:text-2xl p-5 font-bold text-left italic overflow-hidden md:translate-y-32">
+          <blockquote className="mx-auto max-w-2xl text-xl sm:text-2xl p-5 font-bold text-left italic overflow-hidden lg:translate-y-32">
             I'm thinking critical about structural problems.
             My approach to solving these problems is hands-on and output-focus.
             Using my interdisciplinary skill set, I always have an eye for the bigger picture.
-            <div className="max-w-sm md:max-w-lg -translate-y-25 sm:translate-x-10">
+            <div className="max-w-sm md:max-w-lg md:-translate-y-25 sm:translate-x-10">
               <img src={Signature} />
             </div>
           </blockquote>
@@ -97,7 +97,7 @@ const Hero = () => (
 
 const Sticky = () => (
   <div className="z-10 w-full sticky lg:fixed top-0 p-5 pr-8 bg-white flex justify-between">
-    <h2 className="text-[#232c42] font-bold italic text-3xl mr-5 sm:text-5xl">Jasper Anders</h2>
+    <h1 className="text-[#232c42] font-bold italic text-3xl mr-5 sm:text-5xl">Jasper Anders</h1>
     <div className="flex flex-col sm:flex-row items-center">
       <div className="mx-4" key={"blog"}>
         <a className="text-2xl font-bold" target="_blank" href={"https://marginalien.jasperanders.xyz"}>

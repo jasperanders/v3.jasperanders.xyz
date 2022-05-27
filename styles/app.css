@@ -11,8 +11,15 @@
     }
 
     @font-face {
+      font-family: "Noto Sans";
+      src: url("/fonts/NotoSans-Regular.ttf");
+      font-display: swap;
+    } 
+
+    @font-face {
       font-family: "Secular One";
-      src: url("/fonts/SecularOne.ttf");
+      font-weight: 400;
+      src: url("/fonts/SecularOne-Regular.ttf");
       font-display: swap;
     } 
     @font-face {
@@ -57,23 +64,27 @@
     }
 
     body {
-      font-family: "Fira Code", sans-serif;
+      font-family: "Noto Sans", sans-serif;
     }
 
     a {
       font-style: italic;
       text-decoration: underline;
-      /* text-underline-offset: 3; */
+      text-underline-offset: 3px;
       text-decoration-thickness: 5px;
-      text-decoration-color: #fb7185;
+      text-decoration-color: #38bdf8;
     }
-
+    
     a:hover {
-      text-decoration-color: #fda4af;
+      text-decoration-color: #0ea5e9;
     }
 
-    h1, h2, h3, h4 {
+    h1 {
       font-family: "Arvo", serif;
     }
 
+    h2, h3, h4{
+      font-family: "Secular One", serif;
+      font-weight: 400;
+    }
 }

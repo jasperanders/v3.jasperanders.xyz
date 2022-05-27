@@ -1,8 +1,8 @@
 ---
-title: Improving how Digital Experiments are Run
+title: Improving the Infrastructure for Economic Experiments
 when: 2021
 type: University Project
-img: icons/arrows-spin-solid.svg
+# img: icons/arrows-spin-solid.svg
 tags: ["DevOps", "CI/CD", "Kubernetes", "Docker", "GitLab" ]
 ---
 

@@ -2,7 +2,7 @@
 title: Helping a Non-Profit become Visible
 when: 2020
 at: sustainXchange
-img: icons/sustanXlogoSquare-v1_7.svg
+# img: icons/sustanXlogoSquare-v1_7.svg
 type: Personal Project
 tags: ["Gatsby js", "React", "CMS"]
 ---

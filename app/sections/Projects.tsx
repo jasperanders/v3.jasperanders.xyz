@@ -16,11 +16,11 @@ interface project {
 
 const projects: Array<project> = [
   { ...Edmond.attributes, details: Edmond.default },
-  { ...SustainXweb.attributes, details: SustainXweb.default },
   {
     ...OForest.attributes,
     details: OForest.default
   },
+  { ...SustainXweb.attributes, details: SustainXweb.default },
 ]
 
 const cardProps: Array<CardProps> = []
@@ -36,8 +36,14 @@ projects.map(project => cardProps.push(
   }
 ))
 
+const Preface = (<p>Hello</p>)
+
 export function Projects() {
   return (
-    <Section title='Projects' cards={cardProps} twoCols={false} />
+    <Section
+      title='Projects'
+      cards={cardProps}
+      // preface={Preface}
+      twoCols={false} />
   )
 }

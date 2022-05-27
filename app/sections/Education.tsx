@@ -11,6 +11,7 @@ interface education {
   orgUrl: string
   tags: Array<string>
   details: string
+  what: string
 }
 
 const education: Array<education> = [{
@@ -27,7 +28,7 @@ const cardProps: Array<CardProps> = []
 education.map(education => cardProps.push({
   title: education.title,
   topRight: education.duration,
-  subtitlePrefix: "at",
+  subtitlePrefix: `${education.what} at`,
   subtitle: education.org,
   subtitleUrl: education.orgUrl,
   tags: education.tags,
