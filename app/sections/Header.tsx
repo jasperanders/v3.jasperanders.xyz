@@ -64,7 +64,7 @@ export default function Header() {
         <div className="flex flex-col lg:translate-y-10 mx-auto justify-between lg:h-[70vh]">
 
           <blockquote className="mx-auto max-w-2xl text-xl sm:text-2xl p-5 font-bold text-left italic overflow-hidden lg:translate-y-32">
-            I am a critical and solution-oriented thinker. I am interested in structural problems.
+            I am a critical and solution-oriented thinker and interested in structural problems.
             My approach to problem-solving is hands-on and output-focused.
             I always keep an eye for the big picture and benefit from my interdisciplinary skill set. 
             <div className="max-w-sm md:max-w-lg md:-translate-y-25 sm:translate-x-10">
