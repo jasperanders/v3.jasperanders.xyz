@@ -38,7 +38,7 @@ export function Skills() {
   // { skills }: { skills?: Array<Skill> }
   return (
     <div >
-      <h2 className="text-3xl text-slate-700 font-bold italic mb-8">On My Tool Belt</h2>
+      <h2 className="text-3xl text-slate-700 font-bold italic mb-8">In My Tool Belt</h2>
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-10 shadow-lg bg-white rounded-3xl p-5">
         {skills.map((skill) => (
           <div key={skill.name} className="group w-28 h-28 flex items-center justify-center relative">
