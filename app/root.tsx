@@ -34,6 +34,7 @@ export default function App() {
       </head>
       <body>
         <Outlet />
+        {/* {console.log(process.env)} */}
         <ScrollRestoration />
         <Scripts />
         <LiveReload />

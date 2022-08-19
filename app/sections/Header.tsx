@@ -64,10 +64,17 @@ export default function Header() {
         <div className="flex flex-col lg:translate-y-10 mx-auto justify-between lg:h-[70vh]">
 
           <blockquote className="mx-auto max-w-2xl text-xl sm:text-2xl p-5 font-bold text-left italic overflow-hidden lg:translate-y-32">
-            I am a critical and solution-oriented thinker and interested in structural problems.
-            My approach to problem-solving is hands-on and output-focused.
-            I always keep an eye for the big picture and benefit from my interdisciplinary skill set. 
-            <div className="max-w-sm md:max-w-lg md:-translate-y-25 sm:translate-x-10">
+            Hey, 
+            <br />
+            I am Jasper. Currently, I'm finishing my master's degree @ KIT.
+            <br />
+            <br />
+            I'm into web technologies, smooth user experiences and disenchanting buzzwords.
+
+            <br />
+            <br />
+            Take a look at my previous projects below. If you want to get in contact, message me on LinkedIn or Twitter.
+            <div className=" max-w-sm md:max-w-lg md:-translate-y-25 sm:translate-x-10">
               <img alt="Signature" src={Signature} />
             </div>
           </blockquote>
@@ -107,9 +114,9 @@ const Sticky = () => (
       <div className="flex mt-4 sm:m-0">
 
         {[
-          { src: GitHub, url: "https://github.com/jasperanders" }, 
-          {src: Twitter, url: "https://twitter.com/_asperanders"},
-          { src: Linkedin, url: "https://www.linkedin.com/in/jasper-anders/"}, 
+          { src: GitHub, url: "https://github.com/jasperanders" },
+          { src: Twitter, url: "https://twitter.com/_asperanders" },
+          { src: Linkedin, url: "https://www.linkedin.com/in/jasper-anders/" },
         ].map((social) => (
           <div className="mx-1" key={social.src}>
             <a href={social.url} target="_blank">
