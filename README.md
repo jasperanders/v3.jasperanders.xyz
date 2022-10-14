@@ -26,7 +26,10 @@ Then run the app in production mode:
 npm start
 ```
 
-Now you'll need to pick a host to deploy it to.
+> I deployed this project on fly.io. To deploy run
+> ``` 
+> fly deploy
+> ``` 
 
 ### DIY
 
