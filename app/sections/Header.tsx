@@ -73,7 +73,7 @@ export default function Header() {
 
             <br />
             <br />
-            Take a look at my previous projects below. If you want to get in contact, message me on LinkedIn or Twitter.
+            Take a look at my previous projects below. If you want to get in touch, message me on LinkedIn or Twitter.
             <div className=" max-w-sm md:max-w-lg md:-translate-y-25 sm:translate-x-10">
               <img alt="Signature" src={Signature} />
             </div>

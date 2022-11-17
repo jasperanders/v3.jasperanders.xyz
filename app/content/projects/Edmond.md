@@ -1,5 +1,5 @@
 ---
-title: Making it Easier to Meet Your Teammates 
+title: Organizing Personal Meetings in Large Teams  
 when: 2022
 type: Personal Project
 #img: https://slack.dev/bolt-python/assets/bolt-py-logo.svg
@@ -12,4 +12,4 @@ Luckily, the mathematician Jack Edmonds ran into a similar problem and created a
 
 The bot gives a prompt to specify the amount of desired matches. Further it asks for the channels (teams) it should match. The bot will then send a message containing the matches to everybody involved.
 
-Take a look at the [git repo](https://github.com/jasperanders/EdmondsCoffeeDate) to see it in action and for more documentation.
+Take a look at the [git repo](https://github.com/jasperanders/EdmondsCoffeeDate) to see it in action and for more documentation. If you just quickly want to create some matches, you can find a demo page [here](https://edmonds-coffee-matches.fly.dev/).
