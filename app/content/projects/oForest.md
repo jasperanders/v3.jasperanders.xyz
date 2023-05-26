@@ -6,7 +6,7 @@ type: University Project
 tags: ["DevOps", "CI/CD", "Kubernetes", "Docker", "GitLab" ]
 ---
 
-The Kalsruher Institute of Technology (KIT, my university) runs a [lab](https://www.kd2lab.kit.edu/) where researchers can conduct  experiments for economic research. In the past, these experiments were created using the Python library [oTree](https://otree.org), a python library, and put onto a server using basic `ftp`. Experiments were running concurrently and were started and stopped manually by multiple, untrained users. This led to numerous errors and created constant fear of data loss - a situation that could not be sustained, and a perfect reason to get myself familiar with DevOps. My goal was to create a more user-friendly setup for these experiments.
+The Karlsruhe Institute of Technology (KIT, my university) runs a [lab](https://www.kd2lab.kit.edu/) where researchers can conduct  experiments for economic research. In the past, these experiments were created using the Python library [oTree](https://otree.org), and put onto a server using basic `ftp`. Experiments were running concurrently and were started and stopped manually by multiple, untrained users. This led to numerous errors and created constant fear of data loss - a situation that could not be sustained, and a perfect reason to get myself familiar with DevOps. My goal was to create a more user-friendly setup for these experiments.
 
 Using my results, the deployment of new experiments follows a simple user story:
 

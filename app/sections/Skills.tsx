@@ -31,7 +31,7 @@ const skills: Array<Skill> = [
   { name: "Latex", imgUrl: "https://upload.wikimedia.org/wikipedia/commons/9/92/LaTeX_logo.svg" },
   { name: "Slack SDK", imgUrl: Slack },
   { name: "GitLab CI", imgUrl: "https://about.gitlab.com/images/press/logo/png/gitlab-icon-rgb.png" },
-  { name: "Vim", imgUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Vimlogo.svg/1024px-Vimlogo.svg.png" },
+  { name: "Vim", imgUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Vimlogo.svg/1024px-Vimlogo.svg.png", scale: "xs" },
 ]
 
 export function Skills() {
